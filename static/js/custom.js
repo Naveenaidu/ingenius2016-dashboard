@@ -12,9 +12,6 @@ $(function() {
 	
 	
 	// Countdown
-	$('.countdown').downCount({
-		date: '09/11/2016 11:00:00',
-		offset: +5.5
-	});			
+				
     
 });

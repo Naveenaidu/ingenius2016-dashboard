@@ -1,3 +1,5 @@
+
+
 /* See Soon - Coming Soon/Under Construction Responsive Template
 Author: EGrappler.com
 Tags: Dark, coming soon, under construction, black, one column
@@ -6,8 +8,15 @@ Tags: Dark, coming soon, under construction, black, one column
 body{
 	background:#202020;
 	color:#fff;
-	font:18px/28px 'Raleway', sans-serif;
+	font:18px/28px 'Roboto', sans-serif;
 	font-weight:300;
+	height: 100%;
+}
+.display{
+
+}
+.nodisplay{
+	display:none;
 }
 iframe {
 	position: fixed;
@@ -17,12 +26,23 @@ iframe {
 	height: 101%;
 	z-index: -2;
 }
+.font{
+	font-style: sans-serif;
+}
 .bl{
 	font-weight: 1200;
 }
+.alert{
+	opacity:0.7;
+	
+}
+.alert > p{
+	font-weight: bolder;
+	font-size:20px;
+}
 /* General  */
 .head{
-	position:fixed;
+	
     width:100%;
     height:100%;
     top:0px;
@@ -38,10 +58,10 @@ a:focus{
 	outline:none;
 }
 h1, h2, h3, h4, h5, h6{
-	font-family:'Coustard', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	margin:0;
 	padding:0;
-	font-weight:300;
+	font-weight:400;
 }
 h1{
 	font-size:72px;
@@ -78,12 +98,20 @@ h6{
 	font-size: 100px;
 }
 #header{
-	
+	height: 100%;
+}
+#sectiondiv{
+	height: 100%;
+}
+section{
+	height: 100%;
 }
 	.header-overlay{
 	
 		background: rgba(43, 64, 90, 0.6);
 		padding:30px 0;	
+		height: 100%;
+		
 			
 	}
 	 
@@ -95,7 +123,38 @@ h6{
   margin: 90px auto 140px auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.35);
 }
+.pre-countDown {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	transform: scale(1,1);
+	transition: all 0.5s;
+	z-index: 10;
+}
 
+.pre-countDown span{
+	
+
+	width: 100%;
+	margin-top: 20%;
+	text-align: center;
+	font-size: 10em;
+	color: white;
+	font-weight: 200;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.25s ease-out;
+}
+
+.pre-countDown span.active {
+	opacity: 1;
+	transition: all 0.25s ease-in;
+}
 .hexagon:before,
 .hexagon:after {
   content: "";
@@ -152,11 +211,15 @@ top: -13%; }
 	}
 	
 /* Countdown  */	
+	.data{
+			 
+
+	}
 	
 	#countdown-area{
 		
 		padding:60px 0;
-		margin:0 0 40px;
+		margin:0 0 ;
 	}
 		ul.countdown{
 			list-style:none;
@@ -171,10 +234,11 @@ top: -13%; }
 				padding:0;
 			}
 				ul.countdown li span{
-					font-family:'Coustard', sans-serif;
-					width:220px;
+					
+					width:200px;
 					display:block;
 					font-size:140px;
+					font-family: 'Roboto', sans-serif;
 				}
 			ul.countdown li.seperator{
 				font-size:100px;
@@ -185,9 +249,9 @@ top: -13%; }
 					color: white;
 					font-size: 28px;
 					font-weight: bold;
-					text-transform:capitalize;
+					
 					margin:0;
-					padding:50px 0 30px 0;
+					padding:50px 0  0;
 				}
 				
 

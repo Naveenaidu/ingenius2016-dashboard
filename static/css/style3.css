@@ -1,12 +1,13 @@
-.cb-slideshow,
-.cb-slideshow:after {
-    position: fixed;
+.cb-slideshow{
+     position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
     z-index: 0;
+    display:block;
 }
+
 
 .cb-slideshow li span {
     width: 100%;
@@ -20,10 +21,11 @@
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation:imageAnimation_255 3636s linear infinite ;
+    -webkit-animation:imageAnimation_255 3636s linear infinite;
     -moz-animation:imageAnimation_255 3636s linear infinite;
     -o-animation:imageAnimation_255 3636s linear infinite;
     animation: imageAnimation_255 3636s linear infinite;
+
 }
 
 
@@ -77,6 +79,53 @@ transform: scale(1.1) translateY(-100%);
     padding: 0 30px;
     line-height: 120px;
     color: rgba(255,255,255,0.8);
+}
+.cb-slideshow li:nth-child(1) span { background-image: url(../images/1.jpg);
+-webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s;
+ }
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay:17s;
+    -moz-animation-delay: 17s;
+    -o-animation-delay: 17s;
+    -ms-animation-delay: 17s;
+    animation-delay: 17s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 23s;
+    -moz-animation-delay: 23s;
+    -o-animation-delay: 23s;
+    -ms-animation-delay: 23s;
+    animation-delay: 23s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../images/4.jpg);
+    -webkit-animation-delay: 29s;
+    -moz-animation-delay: 29s;
+    -o-animation-delay: 29s;
+    -ms-animation-delay: 29s;
+    animation-delay: 29s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../images/5.jpg);
+    -webkit-animation-delay: 35s;
+    -moz-animation-delay: 35s;
+    -o-animation-delay: 35s;
+    -ms-animation-delay: 35s;
+    animation-delay: 35s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../images/6.jpg);
+    -webkit-animation-delay: 41s;
+    -moz-animation-delay: 41s;
+    -o-animation-delay: 41s;
+    -ms-animation-delay: 41s;
+    animation-delay: 41s;
 }
 
 /* Show at least something when animations not supported */
