@@ -235,9 +235,9 @@ top: -13%; }
 			}
 				ul.countdown li span{
 					
-					width:200px;
+					width:180px;
 					display:block;
-					font-size:140px;
+					font-size:120px;
 					font-family: 'Roboto', sans-serif;
 				}
 			ul.countdown li.seperator{
