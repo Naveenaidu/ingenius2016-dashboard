@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>inGenius 2016</title>
+    <title>inGenius 2017</title>
     <!-- Bootstrap Core CSS -->
 
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto:300,400" rel="stylesheet">
@@ -79,17 +79,23 @@
 <br>
 <br>
 <br>
-    <img src="{% static 'images/forge.png' %}" width="800" style=" margin:2em auto;"  class="img-responsive"/>
+<!-- sponsor logo -->
+    <!-- <img src="{% static '/' %}" alt="logo" width="800" style=" margin:2em auto;"  class="img-responsive"/> -->
 </div>
 <div class="col-md-6  col-sm-12">
-    
-    <img src="{% static 'images/logo_dark.png' %}" width="800" style=" margin:2em auto;"  class="img-responsive"/>
+   
+    <img src="{% static 'images/logo.png' %}" width="800" style=" margin:;"  class="img-responsive"/>
 </div>
-<div class="col-md-3  hidden-xs hidden-sm">
+
+<div class="col-md-4  hidden-xs hidden-sm">
+</div>
+
+
+<div class="col-md-4  hidden-xs hidden-sm">
 <br>
 <br>
 <br>
-    <img src="{% static 'images/acm.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
+    <img src="{% static 'images/compb.png' %}" width="2000" style=" margin-top:-60px;"  class="img-responsive"/>
 </div>
 </div>
 <div class="row">
@@ -120,7 +126,7 @@
 </div>
 <div class="col-md-2  hidden-xs hidden-sm">
 <br>
-    <img src="{% static 'images/ubi.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
+    <img src="{% static 'images/ubi.png' %}" width="1800" style=" margin:2em auto;"  class="img-responsive"/>
 </div>
     
 </div>
@@ -180,7 +186,8 @@
             
 
             <!-- Countdown Area Ends -->
-           <iframe src="http://www.tweetbeam.com/show?id=trhw0">&nbsp;</iframe>
+           <div id="particles-js"  style="height:100vh;width:100vw;position: fixed;top:0;left: 0;z-index: -1;">
+           
         </div>
 
          
@@ -188,6 +195,7 @@
     </header>
 
     <script src="{% static 'js/jquery-1.11.1.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/particles.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/jquery.backstretch.min.js' %}" type="text/javascript"></script>
     <script src="{% static 'js/scrollReveal.js' %}" type="text/javascript"></script>
@@ -290,6 +298,126 @@ function timer() {
         date: '{{ end_date }}',
         offset: +5.5
     });
+</script>
+
+<script type="text/javascript">
+   particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#ffffff"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 5,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true,
+  "config_demo": {
+    "hide_card": false,
+    "background_color": "#b61924",
+    "background_image": "",
+    "background_position": "50% 50%",
+    "background_repeat": "no-repeat",
+    "background_size": "cover"
+  }
+});
+
 </script>
 </body>
 </html>

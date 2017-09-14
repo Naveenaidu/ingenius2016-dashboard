@@ -1,12 +1,10 @@
-
-
 /* See Soon - Coming Soon/Under Construction Responsive Template
 Author: EGrappler.com
 Tags: Dark, coming soon, under construction, black, one column
 */
 
 body{
-	background:#202020;
+	background:#000124;
 	color:#fff;
 	font:18px/28px 'Roboto', sans-serif;
 	font-weight:300;
@@ -14,6 +12,10 @@ body{
 }
 .display{
 
+}
+.particles-js-canvas-el{
+    z-index:-1;
+    height:5000px;
 }
 .nodisplay{
 	display:none;
@@ -108,7 +110,7 @@ section{
 }
 	.header-overlay{
 	
-		background: rgba(43, 64, 90, 0.6);
+		
 		padding:30px 0;	
 		height: 100%;
 		
