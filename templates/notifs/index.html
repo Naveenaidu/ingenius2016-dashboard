@@ -13,11 +13,11 @@
     <!-- Bootstrap Core CSS -->
 
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto:300,400" rel="stylesheet">
-   
+
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
     <!-- Google Web Fonts -->
-    
-       
+
+
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" />
     <link href="{% static 'css/style.css' %}" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
@@ -25,7 +25,7 @@
 
         <script type="text/javascript" src="{% static 'js/modernizr.custom.86080.js' %}"></script>
       <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/071d96be2c56cfe6ef99116c2b110f28_0.js" async></script>
-        
+
     <!--[if lt IE 9]>
     <script src="js/ie8-responsive-file-warning.js"></script>
   <![endif]-->
@@ -41,12 +41,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'images/fav-72.png' %}">
     <link rel="apple-touch-icon-precomposed" href="{% static 'images/fav-57.png' %}">
     <link rel="shortcut icon" href="{% static 'images/fav.png' %}">
-     
+
 
 </head>
 <body >
     <!-- Preloader Starts -->
-    
+
     <!-- Preloader Ends -->
     <!-- Header Section Starts -->
     <header id="header" >
@@ -67,7 +67,7 @@
             <span>Set</span>
             <span>Hack!</span>
         </div>
-        {% endif %} 
+        {% endif %}
 
                 <!-- Logo Starts -->
                <!--  <div data-scroll-reveal="enter top and move 50px over 1.2s" class="hexagon">
@@ -83,7 +83,7 @@
     <!-- <img src="{% static '/' %}" alt="logo" width="800" style=" margin:2em auto;"  class="img-responsive"/> -->
 </div>
 <div class="col-md-6  col-sm-12">
-   
+
     <img src="{% static 'images/logo.png' %}" width="800" style=" margin:;"  class="img-responsive"/>
 </div>
 
@@ -95,19 +95,19 @@
 <br>
 <br>
 <br>
-    <img src="{% static 'images/compb.png' %}" width="2000" style=" margin-top:-60px;"  class="img-responsive"/>
+    <img src="{% static 'images/compb.png' %}" width="2000" style=" margin-top:-60px; margin-bottom:10px;"  class="img-responsive"/>
 </div>
 </div>
 <div class="row">
 <div class="col-md-2  hidden-xs hidden-sm">
 <br>
-    <img src="{% static 'images/hackerearth.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
+    <img src="{% static 'images/ucclogo.png' %}" width="600" style=" "  class="img-responsive"/>
 </div>
 <div class="col-md-8 col-xs-12 col-sm-12">
    <div id="countdown-area">
                 <!-- Count Down Timer Starts -->
                 <ul class="countdown">
-               
+
                     <li><span id="hours_ref"  class="hours">00</span>
                         <p  class="hours_ref">
                             <b>hours</b></p>
@@ -122,51 +122,51 @@
                     </li>
                 </ul>
                 <!-- Count Down Timer Ends -->
-            </div> 
+            </div>
 </div>
 <div class="col-md-2  hidden-xs hidden-sm">
 <br>
-    <img src="{% static 'images/ubi.png' %}" width="1800" style=" margin:2em auto;"  class="img-responsive"/>
+    <img src="{% static 'images/ubi.png' %}" width="1200" style=" margin:2em auto;"  class="img-responsive"/>
 </div>
-    
+
 </div>
-                
-                
+
+
 
                 <!-- Logo Ends -->
                 <!-- Main Heading Starts -->
                 <!-- Main Heading Ends -->
-            
+
             <!-- Countdown Area Starts -->
-            
+
 <div class="row">
     <div class="col-md-2  hidden-xs hidden-sm">
         <img src="{% static 'images/gcn.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
     </div>
     <div class="col-md-8 col-xs-12"  >
             <div class="text-center" >
-                
+
             <h2>Notifications</h2>
             </div>
             <br>
-                
+
            <div id="datadiv" class="data">
-               
-         {% block content %}        
+
+         {% block content %}
             {% for notif in notif_obj %}
             {% if notif.shown %}
             <div class="alert alert-info  " role="alert" >
- 
+
   <p class="font">
-      
+
   <strong>{{notif.title}}</strong>
   </p>
- 
+
   <p class="font">
-      
+
    {{notif.data}}
   </p>
- 
+
   <a href="{{notif.url}}" class="alert-link">{{notif.url}}</a>
    <p>
       <i class="fa fa-clock-o" aria-hidden="true"></i> {{notif.created_at| time}}
@@ -174,23 +174,23 @@
 </div>
 {% endif %}
 {% endfor %}
-{% endblock %}           
+{% endblock %}
            </div>
             </div>
             <div class="col-md-2  hidden-xs hidden-sm">
-                <img src="{% static 'images/yourstory.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
+                <img src="{% static 'images/bnat.png' %}" width="600" style=" margin:2em auto;"  class="img-responsive"/>
             </div>
 </div>
-            
-         
-            
+
+
+
 
             <!-- Countdown Area Ends -->
            <div id="particles-js"  style="height:100vh;width:100vw;position: fixed;top:0;left: 0;z-index: -1;">
-           
+
         </div>
 
-         
+
         </div>
     </header>
 
@@ -205,7 +205,7 @@
     $(document).ready(
             function() {
                 setInterval(function() {
-                    
+
                     $("#datadiv").load(location.href+" #datadiv>*","");
                 }, 3000);
             });
@@ -259,7 +259,7 @@ function timer() {
 
     var now = new Date();
     var stime;
-    var diff;   
+    var diff;
 
     //Get Time
     setTimeout(function(){
@@ -268,7 +268,7 @@ function timer() {
 
         //CountDown Timer
         var countDown = setInterval(function () {
-            
+
             seconds_left = diff;
             if(seconds_left == 0) {
                 clearInterval("countDown");
@@ -280,19 +280,19 @@ function timer() {
             seconds_left = seconds_left % 3600;
             minutes = parseInt(seconds_left / 60);
             seconds = parseInt(seconds_left % 60);
-            
+
             $(".count-down .hours .number").html(hours);
             $(".count-down .minutes .number").html(minutes);
             $(".count-down .seconds .number").html(seconds);
-            
-            diff = diff-1;  
+
+            diff = diff-1;
 
         }, 1000); //Update counter every second
 
     },500); //Just for safety, giving buffer for database update
 }
     </script>
-    
+
 <script type="text/javascript">
     $('.countdown').downCount({
         date: '{{ end_date }}',
