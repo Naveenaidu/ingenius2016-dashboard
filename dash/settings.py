@@ -25,7 +25,7 @@ SECRET_KEY = '%+g*cc=pikc7m@18=!wu%fnn9#n_-o7d#j2+@r&4=-^97(i=si'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['139.59.35.146','dashboard.ingeniushack.com']
 
 
 # Application definition
